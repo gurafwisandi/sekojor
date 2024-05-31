@@ -60,7 +60,10 @@
                                                 {{ date('d M Y', strtotime($item->created_at)) }}</td>
                                         </tr>
                                     </table>
-                                    <?php echo substr($item->deskripsi, 0, 800) . ' ...'; ?>
+                                    <?php
+                                    $desc = explode('&nbsp;&nbsp;&nbsp;&nbsp;', $item->deskripsi);
+                                    echo $desc[0];
+                                    ?>
                                 </div>
                             </div>
                         </div>

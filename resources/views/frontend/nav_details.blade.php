@@ -1,5 +1,4 @@
 <nav id="navbar" class="navbar">
-
     <ul>
         <li><a class="nav-link scrollto" href="{{ route('index') }}#hero">Home</a></li>
         <li><a class="nav-link scrollto {{ Request::segment(1) == 'blog' || Request::segment(1) == 'blogs' ? 'active' : '' }}"

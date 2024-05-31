@@ -7,7 +7,8 @@
             @foreach ($galery as $item)
                 <div class="col-lg-4 col-md-6 portfolio-item">
                     <div class="portfolio-wrap">
-                        <img src="{{ URL::asset('files/galery/' . $item->image) }}" class="img-fluid" alt="">
+                        <img src="{{ URL::asset('files/galery/' . $item->image) }}" class="img-fluid" alt=""
+                            width="416" height="312">
                         <div class="portfolio-info">
                             <h4>{{ $item->judul }}</h4>
                             <div class="portfolio-links">

@@ -18,6 +18,7 @@ class FrontEndController extends Controller
             'blog' => BlogModel::where('aktif', 1)->get(),
             'galery' => GaleryModel::where('aktif', 1)->get(),
             'setting' => SettingModel::where('id', 1)->get(),
+            'about' => AboutModel::all()
         ];
         return view('index')->with($data);
     }

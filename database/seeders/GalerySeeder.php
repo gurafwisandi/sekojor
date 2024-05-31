@@ -49,6 +49,36 @@ class GalerySeeder extends Seeder
                 'aktif' => 1,
                 'user_create' => 1,
             ],
+            [
+                'image' => 'silat2.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
+            [
+                'image' => 'lenong2.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
+            [
+                'image' => 'galery-7.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
+            [
+                'image' => 'silat1.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
+            [
+                'image' => 'lenong1.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
+            [
+                'image' => 'palang.jpg',
+                'aktif' => 1,
+                'user_create' => 1,
+            ],
         ];
 
         foreach ($galery as $key => $value) {

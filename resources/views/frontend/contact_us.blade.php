@@ -106,7 +106,17 @@
                 <div class="info-box ">
                     <i class="bx bx-phone-call"></i>
                     <h3>Call Us</h3>
-                    <p>{{ $setting[0]->call }}</p>
+                    <?php
+                    $call = explode('|', $setting[0]->call);
+                    if (count($call) > 1) {
+                        for ($i = 0; $i < count($call); $i++) {
+                        $call_wa = explode(' : ', $call[$i]);
+                ?>
+                    <p>{{ $call[$i] }}</p>
+                    <?php
+                        }
+                    }
+                ?>
                 </div>
             </div>
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">

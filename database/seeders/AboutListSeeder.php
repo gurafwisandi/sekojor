@@ -29,7 +29,26 @@ class AboutListSeeder extends Seeder
                 <p style="text-align: justify;">Setelah angkatan kedua ini Baba Amir cukup lama vakum, hingga pada tahun 2010 Baba Amir mulai membuka pengajaran kembali ke beberapa pemuda diantaranya Bang Hadi, Bang Totong, Bang Oril, Bang Bayu, Bang Rangga dan lain-lain karena memang pada saat itu murid baba Amir cukup banyak, hingga tahun 2011 masuklah beberapa pemuda lainnya diantaranya Bang Sahlan, Bang Pantek, Bang Doni, Bang Doni Arpas, Bang Adam, dan Bang Sidik sampai tahun 2013 (menyelesaikan pengajarannya) mereka dikenal sebagai murid Baba Amir angkatan ketiga. Seiring berjalannya waktu di tahun ini juga pada tanggal 11 Maret 2011, atas persetujuan dan restu Baba Amir akhirnya di bakukanlah perkumpulan tersebut menjadi sebuah sanggar yang namanya di ambil dari nama silat itu sendiri bernama "Sanggar Sekojor".</p>
                 <p style="text-align: justify;">Disamping murid-murid Baba Amir eksis mengenalkan Silat Sekojor-nya kepada masyarakat luas, pada tahun 2013 Baba Amir masih tetap istiqomah melakukan pengajaran ke beberapa pemuda lainnya diantaranya Bang Imam, Bang Rangga, Mia, Bang Pa-i, Bang Fadli, Bang Alam, Bang Rafli dan yang lainnya. Hingga sampai pada hari ini mereka telah mendapatkan izin dan restu Baba Amir serta mandat untuk terus melanjutkan dan melestarikan "Silat Sekojor Lima Kurung", yang pada saat ini Bang Pantek ditunjuk sebagai ketua pengajar Silat Sekojor Lima Kurung sendiri di bawah pengawasan langsung Baba Amir.</p>
                 <p style="text-align: justify;">Dari perjuangan itulah Baba Amir berhasil mempertahankan, mengembangkan serta melestarikan Silat Sekojor sampai saat ini, yang pada mulanya hanya mengajarkan Silat Sekojor ke beberapa pemuda saja, namun seiring waktu berjalan murid-murid baba amir pun kian bertambah sehingga menjadi sebuah Sanggar seni dan tradisi budaya Betawi yang saat ini Sangar Sekojor telah mengantongi izin resmi berbadan hukum dari Akte Notaris INA ROSIANA, SH. S.K Menteri Kehakiman &amp; HAM RI No. C-723 HT.03.02-Th.2002 Tgl 27 Maret 2002 NOTARIS PASAR MODAL NO: 726/PM/STTD-N/2004. LKB No Pend. 032 11 02 09 B 16. Dan sampai riwayat ini di buat pada tanggal 14 Januari 2021 Sanggar Sekojor telah banyak berkontribusi dan turut berpartisipasi dalam melestarikan Seni dan Tradisi Budaya Betawi di bawah naungan lembaga-lembaga resmi pemerintahan seperti LKB (Lembaga Kebudayaan Betawi), dan Dinas Pariwisata dan Kebudayaan DKI Jakarta serta telah banyak menyumbangkan prestasi-prestasi dalam bidang Seni Lenong Preman Betawi, Palang Pintu, Gambang Kromong dan Seni Silat Tradisi di berbagai event dan perlombaan baik itu tingkat daerah maupun provinsi.</p>
-                <p style="text-align: justify;">Harapan kami adalah dengan adanya Sanggar Sekojor ini dapat menjadi wadah silaturahmi bagi para pelaku-pelaku seni budaya Betawi seperti lenong, ondel-ondel, dan gambang kromong agar dapat terus mengembangkan dan melestarikan Budaya dan tradisi Betawi agar tetap eksis di tengah era globalisasi saat ini, demikian riwayat ini kami sampaikan semoga dapat menjadi motivasi yang membangun untuk kita semua dalam melestarikan Budaya Bangsa.</p>',
+                <p style="text-align: justify;">Harapan kami adalah dengan adanya Sanggar Sekojor ini dapat menjadi wadah silaturahmi bagi para pelaku-pelaku seni budaya Betawi seperti lenong, ondel-ondel, dan gambang kromong agar dapat terus mengembangkan dan melestarikan Budaya dan tradisi Betawi agar tetap eksis di tengah era globalisasi saat ini, demikian riwayat ini kami sampaikan semoga dapat menjadi motivasi yang membangun untuk kita semua dalam melestarikan Budaya Bangsa.</p>
+                <p style="text-align: justify;">&nbsp;</p>
+                <table style="height: 29px;" width="100%">
+                <tbody>
+                <tr>
+                <td style="width: 101px; text-align: center;">&nbsp;<img src="../../../files/galery/pendiri1.jpg" alt="" width="300" height="428" /></td>
+                <td style="width: 101px; text-align: center;">&nbsp;</td>
+                <td style="width: 101px; text-align: center;">&nbsp;<img src="../../../files/galery/pendiri2.jpg" alt="" width="300" height="428" /></td>
+                <td style="width: 101px; text-align: center;">&nbsp;</td>
+                <td style="width: 101px; text-align: center;">&nbsp;<img src="../../../files/galery/pendiri3.jpg" alt="" width="300" height="428" /></td>
+                </tr>
+                <tr>
+                <td style="width: 101px; text-align: center;"><strong>Kong Nya`ih bin Potol</strong><br />Guru besar Silat Sekojor Lima Kurung Generasi Pertama</td>
+                <td style="width: 101px; text-align: center;">&nbsp;</td>
+                <td style="width: 101px; text-align: center;"><strong>Baba Sadih bin Jenti (kiri) &amp; Babatua H. Djidi bin Asil (kanan)</strong><br />Guru besar Silat Sekojor Lima Kurung Generasi Kedua</td>
+                <td style="width: 101px; text-align: center;">&nbsp;</td>
+                <td style="width: 101px; text-align: center;"><strong>Baba Amir bin Bapeng</strong><br />Guru besar Silat Sekojor Lima Kurung Generasi Ketiga &amp; Pendiri Sanggar Sekojor Lima Kurung</td>
+                </tr>
+                </tbody>
+                </table>',
                 'user_create' => 1,
             ],
         ];

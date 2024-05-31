@@ -2,8 +2,19 @@
     <div class="container d-flex justify-content-center justify-content-md-between">
         <div class="contact-info d-flex align-items-center">
             <i class="bi bi-envelope-fill"></i><a href="mailto:contact@example.com">{{ $setting[0]->email }}</a>
-            <i class="bi bi-phone-fill phone-icon"></i><a
-                href="whatsapp://send?text=Hello&phone={{ $setting[0]->call }}">{{ $setting[0]->call }}</a>
+            <i class="bi bi-phone-fill phone-icon"></i>
+            <?php
+                $call = explode('|', $setting[0]->call);
+                if (count($call) > 1) {
+                    for ($i = 0; $i < count($call); $i++) {
+                    $call_wa = explode(' : ', $call[$i]);
+            ?>
+            <a href="whatsapp://send?text=Hello&phone={{ $call_wa[1] }}">{{ $call[$i] }}</a>
+            <?php
+                    if($i != count($call) - 1){echo  '&nbsp;|&nbsp;';}
+                    }
+                }
+            ?>
         </div>
         <div class="social-links d-none d-md-block">
             @if ($setting[0]->youtube)

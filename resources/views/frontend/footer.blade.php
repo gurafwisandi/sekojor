@@ -2,13 +2,11 @@
     <div class="footer-top">
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-6 footer-info">
+                <div class="col-lg-3 col-md-6 footer-info">
                     <h3>{{ $setting[0]->apps }}</h3>
                     <p>
                         {{ $setting[0]->address }}<br>
-                        <strong>Phone:</strong> <a style="color: white"
-                            href="whatsapp://send?text=Hello&phone={{ $setting[0]->call }}">{{ $setting[0]->call }}</a><br>
-                        <strong>Email:</strong> {{ $setting[0]->email }}<br>
+                        <strong>Email:</strong><br>{{ $setting[0]->email }}<br>
                     </p>
                     <div class="social-links mt-3">
                         @if ($setting[0]->twitter)
@@ -25,7 +23,7 @@
                         @endif
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-6 footer-links">
+                <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
                         <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
@@ -35,7 +33,22 @@
                         <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
                     </ul>
                 </div>
-                <div class="col-lg-4 col-md-6 footer-links">
+                <div class="col-lg-3 col-md-6 footer-links">
+                    <h4>Contact Person</h4>
+                    <?php
+                        $call = explode('|', $setting[0]->call);
+                        if (count($call) > 1) {
+                            for ($i = 0; $i < count($call); $i++) {
+                            $call_wa = explode(' : ', $call[$i]);
+                    ?>
+                    <a style="color: white"
+                        href="whatsapp://send?text=Hello&phone={{ $call_wa[1] }}">{{ $call[$i] }}</a><br>
+                    <?php
+                            }
+                        }
+                    ?>
+                </div>
+                <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Legalitas</h4>
                     <p>{{ $setting[0]->legalitas }}</p>
                 </div>
