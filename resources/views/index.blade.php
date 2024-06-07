@@ -26,19 +26,55 @@
         <!-- ======= Our Team Section ======= -->
         @include('frontend.blog')
         <!-- End Our Team Section -->
-        <section class="about-lists">
+        <section>
             <div class="container">
                 <div class="row no-gutters">
                     <div class="col-lg-12 col-md-6 content-item aos-init aos-animate" data-aos="fade-up">
                         <div class="section-title">
-                            <h2>Sanggar Seni Budaya Betawi</h2>
+                            <h2><b style="color: red">Sanggar</b> Seni Budaya Betawi</h2>
                         </div>
                         <p><?php echo substr($about[0]->deskripsi, 0, 288); ?></p><br>
                         <a class="btn btn-primary btn-lg" href="{{ route('about') }}" role="button">Cari tau tentang
                             kami</a>
                     </div>
                 </div>
-
+            </div>
+        </section>
+        <section id="portfolio-details" class="portfolio-details">
+            <div class="container" data-aos="fade-up">
+                <div class="row no-gutters">
+                    <div class="col-lg-12 col-md-6 content-item aos-init aos-animate" data-aos="fade-up">
+                        <div class="section-title">
+                            <h2>Sanggar <b style="color: red">Sekojor Lima Kurung</b></h2>
+                        </div>
+                        <p>Telah berbadan hukum dan diakui oleh lembaga-lembaga kebudayaan maupun instansi pemerintah
+                            sebagai
+                            organisasi non profit yang bergerak dibidang kesenian & kebudayaan betawi yang sah</p><br>
+                    </div>
+                </div>
+                <div class="row gy-4">
+                    <div class="col-lg-4">
+                    </div>
+                    <div class="col-lg-4">
+                        <div class="portfolio-details-slider swiper">
+                            <div class="swiper-wrapper align-items-center">
+                                <?php
+                                $no = 1;
+                                $partner = ['partner1.png', 'partner2.png', 'partner3.png', 'partner4.png'];
+                                ?>
+                                @foreach ($partner as $item)
+                                    <div class="swiper-slide">
+                                        <img src="{{ URL::asset('files/galery/' . $item) }}" height="306px"
+                                            width="306px">
+                                    </div>
+                                @endforeach
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                    </div>
+                    <div class="col-lg-4">
+                    </div>
+                </div>
             </div>
         </section>
         <!-- ======= Our Portfolio Section ======= -->
