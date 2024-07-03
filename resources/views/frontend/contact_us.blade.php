@@ -120,7 +120,7 @@
                 </div>
             </div>
             <div class="col-lg-12" data-aos="fade-up" data-aos-delay="300">
-                <form action="{{ route('contact_us.store') }}" method="POST" class="php-email-form">
+                <form action="{{ route('contact_us.store_front') }}" method="POST" class="php-email-form">
                     @csrf
                     <div class="row">
                         <div class="col-lg-6 form-group">

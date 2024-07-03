@@ -48,6 +48,9 @@ Route::group(
     }
 );
 
+
+Route::post('/contact_us', [ContactUsController::class, 'store'])->name('contact_us.store_front');
+
 Route::group(
     [
         'prefix'     => 'admin',

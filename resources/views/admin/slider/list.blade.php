@@ -75,7 +75,7 @@
                                         ?>
                                         <label data-toggle="tooltip" data-placement="top" title=""
                                             data-original-title="{{ $list->link }}" aria-describedby="tooltip121408">
-                                            {{ substr($list->link, 0, 25) . $titik }}
+                                            {!! substr($list->link, 0, 25) . $titik !!}
                                         </label>
                                     </td>
                                     <td>

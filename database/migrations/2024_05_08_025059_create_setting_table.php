@@ -16,12 +16,13 @@ class CreateSettingTable extends Migration
         Schema::create('setting', function (Blueprint $table) {
             $table->id();
             $table->string('apps', 50);
+            $table->string('kelurahan', 64)->nullable();
             $table->string('kecamatan', 64);
             $table->string('kota', 64);
             $table->string('provinsi', 64);
             $table->string('address', 100);
             $table->string('email', 50);
-            $table->string('call', 50);
+            $table->string('call', 100);
             $table->string('youtube', 100)->nullable();
             $table->string('facebook', 100)->nullable();
             $table->string('instagram', 100)->nullable();

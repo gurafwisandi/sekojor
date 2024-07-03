@@ -6,12 +6,16 @@
                     <h3>{{ $setting[0]->apps }}</h3>
                     <p>
                         {{ $setting[0]->address }}<br>
+                        {{ $setting[0]->kelurahan }}
+                        {{ $setting[0]->kecamatan }}
+                        {{ $setting[0]->kota }}
+                        {{ $setting[0]->provinsi }}<br>
                         <strong>Email:</strong><br>{{ $setting[0]->email }}<br>
                     </p>
                     <div class="social-links mt-3">
-                        @if ($setting[0]->twitter)
-                            <a href="{{ $setting[0]->twitter }}" target="_blank" class="twitter"><i
-                                    class="bi bi-twitter"></i></a>
+                        @if ($setting[0]->youtube)
+                            <a href="{{ $setting[0]->youtube }}" target="_blank" class="youtube"><i
+                                    class="bi bi-youtube"></i></a>
                         @endif
                         @if ($setting[0]->facebook)
                             <a href="{{ $setting[0]->facebook }}" target="_blank" class="facebook"><i
@@ -26,11 +30,12 @@
                 <div class="col-lg-3 col-md-6 footer-links">
                     <h4>Useful Links</h4>
                     <ul>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#hero">Home</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#services">Blog</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#project">About Us</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#produk">Galery</a></li>
-                        <li><i class="bx bx-chevron-right"></i> <a href="#contact">Contact Us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('index') }}">Home</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('blogs') }}">Blog</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('about') }}">About Us</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('index') }}#produk">Galery</a></li>
+                        <li><i class="bx bx-chevron-right"></i> <a href="{{ route('index') }}#contact">Contact Us</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="col-lg-3 col-md-6 footer-links">

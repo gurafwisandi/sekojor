@@ -16,6 +16,12 @@
                             <small class="text-danger">{{ $errors->first('apps') }}</small>
                         </div>
                         <div class="form-group">
+                            <label>Kelurahan</label>
+                            <input type="text" class="form-control" name="kelurahan" value="{{ $data->kelurahan }}"
+                                required placeholder="Kelurahan" />
+                            <small class="text-danger">{{ $errors->first('kelurahan') }}</small>
+                        </div>
+                        <div class="form-group">
                             <label>Kecamatan</label>
                             <input type="text" class="form-control" name="kecamatan" value="{{ $data->kecamatan }}"
                                 required placeholder="Kecamatan" />
@@ -32,6 +38,7 @@
                             <input type="text" class="form-control" name="provinsi" value="{{ $data->provinsi }}"
                                 required placeholder="Propinsi" />
                             <small class="text-danger">{{ $errors->first('provinsi') }}</small>
+
                         </div>
                         <div class="form-group">
                             <label>Alamat</label>

@@ -28,7 +28,7 @@
                         </div>
                         <div class="form-group">
                             <label>Link</label>
-                            <input type="text" class="form-control" name="link" value="{{ $data->link }}" required
+                            <input type="text" class="form-control" name="link" value="{{ $data->link }}"
                                 placeholder="Link" />
                             <small class="text-danger">{{ $errors->first('link') }}</small>
                         </div>

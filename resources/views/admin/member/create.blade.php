@@ -9,7 +9,7 @@
                         @csrf
                         <div class="form-group">
                             <label>Image</label>
-                            <input type="file" class="form-control" name="image" value="{{ old('image') }}"
+                            <input type="file" class="form-control" name="image" value="{{ old('image') }}" required
                                 placeholder="Image" />
                             <small class="text-danger">{{ $errors->first('image') }}</small>
                         </div>

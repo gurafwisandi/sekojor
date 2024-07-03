@@ -116,6 +116,7 @@ class SettingController extends Controller
     {
         $validated = $request->validate([
             'apps' => 'required',
+            'kelurahan' => 'required',
             'kecamatan' => 'required',
             'kota' => 'required',
             'provinsi' => 'required',
@@ -128,6 +129,7 @@ class SettingController extends Controller
             $setting = SettingModel::findorfail(Crypt::decryptString($id));
             $setting->apps = $request->apps;
             $setting->kecamatan = $request->kecamatan;
+            $setting->kelurahan = $request->kelurahan;
             $setting->kota = $request->kota;
             $setting->provinsi = $request->provinsi;
             $setting->address = $request->address;

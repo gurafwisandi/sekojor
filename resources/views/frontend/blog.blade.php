@@ -6,7 +6,7 @@
         <div class="row">
             <?php $no = 1; ?>
             @foreach ($blog as $item)
-                <div class="col-xl-3 col-lg-4 col-md-6" data-aos="fade-up" <?php
+                <div class="col-xl-4 col-lg-4 col-md-6" data-aos="fade-up" <?php
                 if ($no > 1) {
                     $total_team = $no * 100;
                     echo "data-aos-delay='$total_team'";

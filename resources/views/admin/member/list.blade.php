@@ -63,7 +63,7 @@
                                         ?>
                                         <label data-toggle="tooltip" data-placement="top"
                                             data-original-title="{{ $list->address }}" aria-describedby="tooltip121408">
-                                            {{ substr($list->address, 0, 30) . $titik }}
+                                            {!! substr($list->address, 0, 30) . $titik !!}
                                         </label>
                                     </td>
                                     <td>

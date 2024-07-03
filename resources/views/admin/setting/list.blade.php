@@ -25,6 +25,7 @@
                             <tr>
                                 <th>No</th>
                                 <th>Apps</th>
+                                <th>Kelurahan</th>
                                 <th>Kota</th>
                                 <th>address</th>
                                 <th>Email</th>
@@ -40,6 +41,7 @@
                                 <tr>
                                     <td>{{ $loop->iteration }}</td>
                                     <td>{{ $list->apps }}</td>
+                                    <td>{{ $list->kelurahan }}</td>
                                     <td>{{ $list->kota }}</td>
                                     <td>{{ $list->address }}</td>
                                     <td>{{ $list->email }}</td>
@@ -58,10 +60,6 @@
                                                     data-toggle="tooltip" data-placement="top" title="Edit">
                                                     <i class="mdi mdi-pencil"></i>
                                                 </a>
-                                                {{-- <button type="button" class="btn btn-danger btn-sm delete_confirm"
-                                                    data-toggle="tooltip" data-placement="top" title="Delete">
-                                                    <i class="mdi mdi-trash-can"></i>
-                                                </button> --}}
                                             </div>
                                         </form>
                                     </td>
