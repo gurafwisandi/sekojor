@@ -47,7 +47,8 @@
                             $call_wa = explode(' : ', $call[$i]);
                     ?>
                     <a style="color: white"
-                        href="whatsapp://send?text=Hello&phone={{ $call_wa[1] }}">{{ $call[$i] }}</a><br>
+                        href="https://wa.me/{{ $call_wa[1] }}?text=Halo, Saya ingin mengetahui tentang Sekojor"
+                        target="_blank">{{ $call[$i] }}</a><br>
                     <?php
                             }
                         }
